@@ -1,0 +1,19 @@
+# silly macOS
+.DS_Store
+
+# build files
+build/
+
+# editor config
+.vscode/
+
+# Clion
+.idea/
+cmake-build-debug/
+
+# output file
+output/
+
+# tools
+kalman_tracker.py
+kalman_tracker_linux.x86_64
