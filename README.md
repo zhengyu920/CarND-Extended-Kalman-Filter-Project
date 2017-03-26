@@ -24,7 +24,7 @@ Self-Driving Car Engineer Nanodegree Program
    * On windows, you may need to run: `cmake .. -G "Unix Makefiles" && make`
 4. Run it: `./ExtendedKF path/to/input.txt path/to/output.txt`. You can find
    some sample inputs in 'data/'.
-    - eg. `./ExtendedKF ../data/sample-laser-radar-measurement-data-1.txt output/output.txt`
+    - eg. `./ExtendedKF ../data/sample-laser-radar-measurement-data-1.txt output.txt`
 5. Expected RMSE:   
     data-1: 0.065, 0.060, 0.533, 0.544  
     data-2: 0.185, 0.190, 0.476, 0.804

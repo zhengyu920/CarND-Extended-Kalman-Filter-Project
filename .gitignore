@@ -11,8 +11,6 @@ build/
 .idea/
 cmake-build-debug/
 
-# output file
-output/
 
 # tools
 kalman_tracker.py
