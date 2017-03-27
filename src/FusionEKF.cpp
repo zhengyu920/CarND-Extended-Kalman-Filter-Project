@@ -80,7 +80,7 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
       * Remember: you'll need to convert radar from polar to cartesian coordinates.
     */
     // first measurement
-    cout << "EKF: " << endl;
+//    cout << "EKF: " << endl;
     ekf_.x_ = VectorXd(4);
     ekf_.x_ << 1, 1, 1, 1;
 
@@ -136,7 +136,8 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
           0,            dt4*noise_ay, 0,            dt3*noise_ay,
           dt3*noise_ax, 0,            dt2*noise_ax, 0,
           0,            dt3*noise_ay, 0,            dt2*noise_ay;
-  // Call the Kalman Filter Predict() function
+
+  // Call the Kalman Filter Predict() function, skip prediction if measure comes in the same time
     if(dt >= 0.000001)
         ekf_.Predict();
 
@@ -164,6 +165,6 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
 
 
   // print the output
-  cout << "x_ = " <<"\n"<<ekf_.x_ << endl;
-  cout << "P_ = " <<"\n"<< ekf_.P_ << endl;
+//  cout << "x_ = " <<"\n"<<ekf_.x_ << endl;
+//  cout << "P_ = " <<"\n"<< ekf_.P_ << endl;
 }

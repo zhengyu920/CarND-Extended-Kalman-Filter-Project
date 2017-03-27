@@ -15,3 +15,10 @@ cmake-build-debug/
 # tools
 kalman_tracker.py
 kalman_tracker_linux.x86_64
+kalman-tracker.py
+kalman_tracker_mac.app
+data_in.txt
+data_out.txt
+
+# output file
+output.txt
